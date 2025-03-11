@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="text-center">
+        <!-- Display the Welcome Message -->
+        <h1 class="display-4 mb-3">Welcome to BankingApp</h1>
+
+        <!-- Introductory text -->
+        <p class="lead mb-4" style="font-size: 1.25rem;">
+            Manage your finances with ease and security. BankingApp offers you a simple, secure, and reliable way to handle your financial transactions.
+        </p>
+        <p class="mb-4" style="font-size: 1.25rem;">
+            Whether you're keeping track of daily expenses, managing savings, or transferring funds, our app is designed to make banking simple and accessible.
+            Start exploring our features to stay in control of your money.
+        </p>
+
+        <!-- Display Image under the welcome message,-->
+        <img src="~/image/OnlineBank.jpg" alt="Online Banking" class="img-fluid rounded mb-4" style="max-width: 35%; height: auto;" />
+
+        <!-- Learn More Button under the image -->
+        <div class="mt-4">
+            <a href="@Url.Action("About", "Home")" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<!-- Logo at the top left -->
+<div class="col-md-2 mt-4 text-start ms-3">
+    <img src="~/image/bank%20logog.png" alt="Bank Logo" class="footer-logo">
+</div>

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">We'd love to hear from you! Please reach out if you have any questions or need assistance.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h3>Contact Information</h3>
+        <p>If you'd prefer to contact us directly, feel free to use the information below:</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> <a href="mailto:support@bankingapp.com">support@bankingapp.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><strong>Phone:</strong> <a href="tel:+0315784368">+0315784368</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><strong>Address:</strong> 111 Bluff Road Durban</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        // Show the success pop-up message
+        alert("Your message has been successfully sent.");
+
+        // Optionally, reset the form after submission
+        document.getElementById('contactForm').reset();
+    });
+</script>
+
+<!-- Logo at the top left -->
+<div class="col-md-2 mt-4 text-start ms-3">
+    <img src="~/image/bank%20logog.png" alt="Bank Logo" class="footer-logo">
+</div>
